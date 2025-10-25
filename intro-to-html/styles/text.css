@@ -1,0 +1,14 @@
+      .apple {
+        padding-top: 15px;
+        padding-bottom: 15px;
+        font-size: 14px;
+        background-color: rgb(255, 65, 65);
+        color: white;
+        text-align: center;
+        font-family: Roboto;
+      }
+
+      .span:hover {
+        text-decoration: underline;
+        cursor: pointer;
+      }

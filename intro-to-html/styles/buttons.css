@@ -1,0 +1,69 @@
+* {
+    vertical-align: top;
+    margin: 20px 0px 0px 20px;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  .subscribe {
+    margin-right: 8px;
+    color: white;
+    background-color: red;
+    border: none;
+    padding: 10px 20px 10px 20px;
+    border-radius: 3px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: opacity 0.15s;
+  }
+  .subscribe:hover {
+    opacity: 0.6;
+  }
+  .subscribe:active {
+    opacity: 0.4;
+  }
+
+  .join {
+    margin-right: 8px;
+    background-color: white;
+    color: blue;
+    border-style: solid;
+    border-color: blue;
+    border-width: 1.2px;
+    border-radius: 3px;
+    padding: 10px 15px 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.15s, color 0.15s;
+  }
+  .join:hover {
+    background-color: blue;
+    color: white;
+  }
+  .join:active {
+    opacity: 0.6;
+  }
+  
+
+  .tweet {
+    border: none;
+    background-color: rgb(100, 100, 255);
+    color: white;
+    font-weight: bold;
+    padding: 10px 15px 10px 15px;
+    border-radius: 15px;
+    cursor: pointer;
+    transition: box-shadow 0.15s;
+  }
+  .tweet:hover {
+    opacity: 0.8;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.15);
+  }
+  .tweet:active {
+    opacity: 0.6;
+  }
+
+  .body {
+    margin: 0;
+  }
+
+  .html {
+    margin: 0;
+  }
