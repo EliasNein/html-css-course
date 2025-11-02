@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>15e</title>
+</head>
+<body>
+  <div class="main-container">
+    <div class="image-container">
+      <img class="image" src="../youtube/images/15e">
+      <div class="bottom-container">
+        <button class="button">
+          Add to Cart
+        </button>
+      </div>
+      <div class="sale">
+        20% OFF
+      </div>
+    </div>
+  </div>
+
+  <style>
+    * {
+      margin: 0;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      background-color: lightgray;
+      height: 3000px;
+    }
+
+    .main-container {
+      margin-top: 30px;
+      height: 400px;
+      display: flex;
+      flex-direction: row;
+      flex: 1;
+      justify-content: center;
+    }
+
+    .image-container {
+      height: 400px;
+      width: 400px;
+      position: relative;
+    }
+
+    .image {
+      width: 400px;
+      height: 400px;
+      object-fit: cover;
+      border-style: none;
+      border-radius: 10px;
+    }
+
+    .bottom-container {
+      position: absolute;
+      height: 80px;
+      background-color: rgba(144, 144, 144, 0.808);
+      bottom: 0px;
+      left: 0px;
+      right: 0px;
+      border-style: none;
+      border-bottom-right-radius: 10px;
+      border-bottom-left-radius: 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .button {
+      background-color: white;
+      color: black;
+      border-style: solid;
+      border-width: 1px;
+      border-radius: 5px;
+      padding: 8px 15px 8px 15px;
+      cursor: pointer;
+      transition: padding 0.15s;
+    }
+
+    .button:hover {
+      padding: 10px 17px 10px 17px;
+    }
+
+    .button:active {
+      opacity: 0.8;
+    }
+
+    .sale {
+      position: absolute;
+      top: 0;
+      right: 0;
+      padding-top: 10px;
+    }
+  </style>
+</body>
+</html>
