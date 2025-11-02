@@ -2,6 +2,15 @@
   font-family: Roboto, Arial;
 }
 
+.video-info-grid {
+  display: flex;
+  flex-direction: row;
+}
+
+.video-info {
+  margin-left: 12px;
+}
+
 .video-title {
   margin-top: 0;
   font-size: 14px;
@@ -13,6 +22,7 @@
 .thumbnail-1 {
   width: 100%;
   border-radius: 10px;
+  cursor: pointer;
 }
 
 .video-author,
@@ -32,14 +42,74 @@
   row-gap: 40px;
 }
 
-.video-info-grid {
-  display: grid;
-  grid-template-columns: 50px 1fr;
+@media (max-width: 750px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (min-width: 751px) and (max-width: 999px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+}
+
+@media (min-width: 1000px) {
+  .video-grid {
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+  }
+}
+
+.channel-picture {
+  position: relative;
+  width: 36px;
+  height: 36px;
+}
+
+.channel-picture .tooltip2 {
+  position: absolute;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  width: 220px;
+  height: 70px;
+  background-color: white;
+  border-style: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 10px 3px rgba(0, 0, 0, 0.155);
+  line-height: 20px;
+  bottom: -80px;
+  left: 0px;
+  pointer-events: none;
+  white-space: nowrap;
+  opacity: 0;
+}
+
+.channel-picture:hover .tooltip2 {
+  opacity: 1;
+}
+
+.tooltip2 img {
+  border-radius: 50%;
+  width: 50px;
+  margin-right: 10px;
+}
+
+.paragraph1-tooltip2 {
+  font-weight: 500;
+}
+
+.paragraph2-tooltip2 {
+  color: rgb(82, 82, 82);
+  font-size: 13px;
 }
 
 .profile-picture {
   width: 36px;
   border-radius: 50%;
+  object-fit: cover;
+  cursor: pointer;
 }
 
 .thumbnail-row {
